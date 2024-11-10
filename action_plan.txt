@@ -9,3 +9,177 @@ Data Management Interface: A web application for data entry and management (buil
 Data Visualization: Tableau for dashboards
 
 
+GPT flow
+
+1. Interactive Map with Job Locations
+Objective: Show all available job locations on a map so users can quickly locate nearby opportunities.
+
+Data Fields Used:
+
+_Exact Location_latitude, _Exact Location_longitude
+Governorat, District
+Business name, Enterprise size (Micro, Small, Medium, Large), Economic sector
+Design and Functionality:
+
+Map Markers:
+Each job location is marked on the map.
+Use color-coded markers to represent job types (e.g., Internships in blue, Entry-level in green, Mid-senior in orange).
+Alternatively, use different shapes to indicate enterprise size (Micro, Small, Medium, Large).
+Tooltips:
+When users hover over a marker, a tooltip shows key details:
+Business name
+Job type (e.g., Entry-level, Intern)
+District and Governorate
+Users can click on the marker for more detailed information (see Job Details below).
+Filters:
+Users can filter the map based on location (Governorate and District) and job type to focus on relevant areas.
+Clustering:
+If there are many jobs in close proximity, use clustering to group markers, especially at lower zoom levels. This helps in reducing clutter on the map.
+2. Job Listings Summary Table
+Objective: Provide a detailed view of job postings in a table format for easy scanning, filtering, and sorting.
+
+Data Fields Used:
+Business name, Economic sector, Sub-sector
+Please specify the business products and services
+Number of job vacancies
+Current//Types of positions available (Interns, Entry level, Mid-senior level, etc.)
+Current//Areas of recruitment (Customer Service, Sales, IT, Marketing, Administrative Staff, etc.)
+Enterprise size in terms of number of employees
+Do you consider youth (18-29 years) from the local community for employment?
+Design and Functionality:
+Column Organization:
+Organize columns as follows for readability:
+Business name and sector (Economic sector, Sub-sector)
+Job details (Type of position, Areas of recruitment, Number of vacancies)
+Enterprise size and youth consideration
+Sorting and Filtering:
+Enable users to sort by columns such as:
+Number of job vacancies
+Enterprise size
+Job type
+Add column filters for job type, recruitment area, and location.
+Color Coding:
+Use subtle color backgrounds for different job types to make the table visually organized.
+Clickable Rows:
+Make rows clickable to open a more detailed view of the job (see Job Details section below).
+3. Filter Panel (Sidebar)
+Objective: Allow users to customize the dashboard by selecting filters to narrow down job listings.
+
+Filters Included:
+
+Location:
+Governorat and District to help users focus on nearby jobs.
+Job Type:
+Current//Types of positions available (e.g., Interns, Entry level, Mid-senior level).
+Checkbox options for different types of jobs, allowing multi-select.
+Recruitment Area:
+Current//Areas of recruitment (e.g., IT, Marketing, Sales, Finance).
+Multi-select checkboxes for users to choose one or more areas.
+Enterprise Size:
+Enterprise size (Micro, Small, Medium, Large) filter, which can be displayed as a dropdown or radio buttons.
+Youth Consideration:
+Filter by Do you consider youth (18-29 years) from the local community for employment?, with options like “Yes” and “No.”
+Design and Layout:
+
+Place the filter panel as a collapsible sidebar on the left to keep the main view focused.
+Use expandable sections within the sidebar for each filter category to keep it organized and visually compact.
+4. Job Details Pop-Up or Drill-Down View
+Objective: Provide a comprehensive view of job details when a user clicks on a specific job listing or map marker.
+
+Data Fields Used:
+
+Business name, Economic sector, Sub-sector
+Please specify the business products and services
+Phone Number, Business Phone Number (If applicable)
+Current//Types of positions available
+Current//Areas of recruitment
+Number of job vacancies
+Do you consider youth (18-29 years) from the local community for employment?
+Design and Functionality:
+
+Modal Pop-Up or Side Panel:
+When a user clicks on a listing or marker, a modal window or side panel opens with detailed information about the job.
+Detailed Information:
+Display business information at the top: Business name, sector, sub-sector, and products/services.
+Job details in a dedicated section:
+Type of position available
+Areas of recruitment
+Number of vacancies
+Youth consideration
+Contact information at the bottom, including phone number(s) for easy access.
+Navigation:
+Include “Back to List” or “Close” buttons to help users return to the main dashboard view.
+5. Future Job Projections (Optional)
+Objective: Show anticipated job openings to provide users with insight into future employment opportunities.
+
+Data Fields Used:
+
+Do you expect the need for employees in the next year?, Number of expected job vacancies
+Future//Types of positions available (Interns, Entry-level, Mid-senior level, etc.)
+Future//Areas of recruitment (IT, Marketing, Finance, etc.)
+Design and Functionality:
+
+Separate Tab or Section:
+Place this information in a dedicated section below the current job listings or as a new tab labeled “Future Opportunities.”
+Charts and Visuals:
+Use bar charts or histograms to show the anticipated number of vacancies per job type.
+Break down future recruitment areas by sector to provide insights into growing fields.
+6. Summary Metrics and Visual Insights
+Objective: Provide a quick snapshot of job availability, job types, and areas of recruitment.
+
+Data Fields Used:
+
+Number of job vacancies
+Current//Types of positions available
+Current//Areas of recruitment
+Enterprise size (Micro, Small, Medium, Large)
+Design and Functionality:
+
+Total Job Openings Counter:
+Display a prominent count of total available job openings.
+Job Type Distribution:
+Use a pie chart or bar chart to show the distribution of job types (Interns, Entry-level, Mid-senior, etc.).
+Recruitment Area Distribution:
+Another bar chart can represent recruitment areas such as IT, Marketing, Sales, and Administrative.
+Enterprise Size Distribution:
+A small chart to show the distribution of job openings by enterprise size, giving users insight into whether smaller or larger companies are hiring.
+Final Layout Summary
+Top Section:
+
+Summary Metrics and Visual Insights with charts displaying job type, recruitment areas, and enterprise sizes.
+Left Sidebar:
+
+Filter Panel with collapsible filters for location, job type, recruitment area, enterprise size, and youth consideration.
+Main View:
+
+Interactive Map on the top-right to show job locations with markers.
+Job Listings Summary Table below the map, displaying detailed information and clickable rows to access the Job Details.
+Drill-Down View:
+
+Modal or side panel for job details, providing comprehensive information on each listing.
+Future Opportunities Tab (Optional):
+
+A separate tab to display future job projections and recruitment areas.
+User Flow
+Use Filters:
+
+Users select filters in the sidebar to narrow down their search.
+Explore Map:
+
+Users explore job locations on the map and click on markers to get a quick job summary.
+Browse Listings:
+
+Users review detailed job listings in the summary table, using sorting and filtering as needed.
+View Job Details:
+
+By clicking on a listing or marker, users see a detailed view with contact information for applying or inquiries.
+Explore Future Opportunities:
+
+Optionally, users switch to the “Future Opportunities” tab to explore projected job openings.
+This design plan prioritizes a streamlined, intuitive experience, making it easy for young job seekers to explore, filter, and find relevant job opportunities. The layout is simple yet visually engaging, with clear navigation and interactive elements to enhance the user experience.
+
+
+
+
+
+
