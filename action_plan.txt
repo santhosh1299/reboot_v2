@@ -1,0 +1,11 @@
+Action plan 
+
+
+Proposed Architecture with a Cloud Database
+Key Components
+Database: Amazon RDS (MySQL or PostgreSQL), Azure SQL Database, or Google Cloud SQL
+Data Integration: Tableau with direct database connection or an ETL tool like Fivetran, Stitch, or custom ETL scripts
+Data Management Interface: A web application for data entry and management (built using a framework like Django, Flask, or Node.js)
+Data Visualization: Tableau for dashboards
+
+
